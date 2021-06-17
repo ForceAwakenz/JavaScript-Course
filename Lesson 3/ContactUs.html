@@ -27,25 +27,34 @@
             <form action="input.php" method="GET">
                 <fieldset >
                     <legend>What a type of Guano Apes fan are you?</legend>
-                    <label for="first_time">When did you listened to GA for the first time? &nbsp; &nbsp;</label>
-                    <input type="date" name="first_time" id="first_time">
-                    <br><br>
-                    <label for="email">Enter your email:</label> &nbsp; &nbsp;
-                    <input type="email" name="email" id="email" placeholder="example@inbox.com">
-                    <br><br>
-                    <label for="num">Your Credit Card Pin Code <strong>(required)</strong>: &nbsp; &nbsp; </label>
-                    <input type="number" name="num" id="num" required>
-                    <br><br>
-                    <label for="favalbum">What is your favourite album? &nbsp; &nbsp;</label>
-                    <select name="favalbum" id="favalbum">
-                        <option value="proudLikeAGod">Proud Like A God</option>
-                        <option value="dontGiveMeNames">Don't Give Me Names</option>
-                        <option value="walkingOnAThinLine" selected>Walking On A Thin Line</option>
-                        <option value="belAir">Bel Air</option>
-                        <option value="offline">Offline</option>
-                        <option value="all">I love all of them equally!</option>
-                    </select>
-                    <br><br>
+                    <table>
+                        <colgroup>
+                        <col>
+                        </colgroup>
+                        <tr>
+                            <td><label for="first_time">When did you listened to GA for the first time? &nbsp; &nbsp;</label></td>
+                            <td><input type="date" name="first_time" id="first_time"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Enter your email:</label> &nbsp; &nbsp;</td>
+                            <td><input type="email" name="email" id="email" placeholder="example@inbox.com"></td>
+                        </tr>                        
+                        <tr>
+                            <td><label for="num">Your Credit Card Pin Code <strong>(required)</strong>: &nbsp; &nbsp; </label></td>
+                            <td><input type="number" name="num" id="num" required></td>
+                        </tr>                        
+                        <tr>
+                            <td><label for="favalbum">What is your favourite album? &nbsp; &nbsp;</label></td>
+                            <td>                    <select name="favalbum" id="favalbum">
+                                <option value="proudLikeAGod">Proud Like A God</option>
+                                <option value="dontGiveMeNames">Don't Give Me Names</option>
+                                <option value="walkingOnAThinLine" selected>Walking On A Thin Line</option>
+                                <option value="belAir">Bel Air</option>
+                                <option value="offline">Offline</option>
+                                <option value="all">I love all of them equally!</option>
+                            </select></td>
+                        </tr>
+                    </table>
                     <input type="submit" value="Submit">
                     <input type="reset" name="res" id="reset">
                 </fieldset>
