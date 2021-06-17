@@ -1,0 +1,6 @@
+
+.albums:hover {
+    background-color: darkgray;
+    color: white;
+    font-size: large;
+}
