@@ -1,0 +1,42 @@
+/* Color Cheatsheet */
+:not(*) {
+    color: #eee;
+    color: #32e0c4;
+    color: #393e46;
+    color: #222831;
+
+    /* extra */
+    color: #7fe5f0;
+    color: #162723;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    font-family: 'Roboto', sans-serif;
+}
+
+:is(.playlist, .albums) li {
+    border-radius: 0.4rem;
+    border: #162723 2.5px solid;
+    width: 100%;
+}
+
+#nav {
+    float: left;
+}
+
+main#main {
+    float: left;
+}
+
+#cover {
+    display: inline-block;
+    width: 30%;
+    max-width: 200px;
+}
+
