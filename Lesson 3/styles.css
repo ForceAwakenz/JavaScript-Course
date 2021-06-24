@@ -7,9 +7,12 @@
 
     /* extra */
     color: #7fe5f0;
+    color: #12947F;
     color: #162723;
 }
 
+
+/* ---------------- Big Guys ---------------- */
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -20,23 +23,82 @@ body, html {
     font-family: 'Roboto', sans-serif;
 }
 
-:is(.playlist, .albums) li {
-    border-radius: 0.4rem;
-    border: #162723 2.5px solid;
-    width: 100%;
+main {
+    max-width: 85%;
+    min-width: 800px;
+    margin: 3rem auto;
 }
 
 #nav {
     float: left;
+    width: 25%;
 }
 
-main#main {
+#showbox {
     float: left;
+    width: 40%;
+    min-width: 150px;
+    max-width: 400px;
+    margin: 0 2rem;
 }
 
 #cover {
-    display: inline-block;
-    width: 30%;
-    max-width: 200px;
+    width: 100%;
 }
 
+.playlist {
+    float:left;
+    width: 25%;
+    counter-reset: playlist-counter;
+}
+
+footer {
+    clear: both;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* ---------------- Main Styling ---------------- */
+:is(.playlist, .albums) li {
+    border-radius: 0.4rem;
+    border: #162723 2.5px solid;
+    width: 100%;
+    margin: 0.3rem;
+    padding: 0.4rem;
+}
+
+header {
+    text-align: center;
+    padding: 1rem 0 1rem;
+}
+
+.albums :is(ul, li) {
+    text-align: center;
+}
+
+.albums li{
+    padding: 5% 5%;
+    margin-bottom: 1rem;
+    list-style-type: none;
+}
+
+.playlist li {
+    font-size: 0.9rem;
+    padding: 0.25rem;
+    min-width: max-content;
+    list-style-type: none;
+}
+
+.playlist li::before {
+    counter-increment: playlist-counter;
+    content: counter(playlist-counter) ' ';
+}
+
+.song-duration {
+    float: right;
+}
+
+.audio {
+    display: block;
+    margin: 3% auto;
+}

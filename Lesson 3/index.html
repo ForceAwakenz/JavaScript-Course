@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f7251c8871.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="pics/favicon.png"/>
 
@@ -19,59 +20,60 @@
 </head>
 <body>
 
+    <main>
 
-    
-    <nav id="nav">
-        <ul class="albums">
-            <li><a href="ProudLikeAGod.html">Proud Like A God</a></li>
-            <li><a href="DontGiveMeNames.html">Don't Give Me Names</a></li>
-            <li><a href="WalkingOnAThinLine.html">Walking On A Thin Line</a></li>
-            <li><a href="BelAir.html">Bel Air</a></li>
-            <li><a href="Offline.html">Offline</a></li>
-        </ul>
-    </nav>
-
-    <main id="main">
-        <div class="wrapper">
-
+        <nav id="nav">
+            <ul class="albums">
+                <li><a href="ProudLikeAGod.html">Proud Like A God</a></li>
+                <li><a href="DontGiveMeNames.html">Don't Give Me Names</a></li>
+                <li><a href="WalkingOnAThinLine.html">Walking On A Thin Line</a></li>
+                <li><a href="BelAir.html">Bel Air</a></li>
+                <li><a href="Offline.html">Offline</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div id="showbox">
+            
             <header>
                 <h1>Guano Apes Discography</h1>
             </header>
-
-            <div id="cover" class="main-content" >
-                <img src="pics/ProudLikeAGod.jpg" alt="proud like a God">
+            
+            <div class="cover" class="main-content" >
+                <img id="cover" src="pics/ProudLikeAGod.jpg" alt="proud like a God">
             </div>
-
-            <section class="playlist">
-                <ol>
-                    <li>Open Your Eyes (3:09)</li>
-                    <li>Maria (3:46)</li>
-                    <li><em>Rain (4:37)</em> 📢 </li>
-                    <li>Lords Of The Boards (3:44)</li>
-                    <li>Crossing The Deadline (3:26)</li>
-                    <li>We Use The Pain (2:32)</li>
-                    <li>Never Born (5:18)</li>
-                    <li>Wash It Down (3:06)</li>
-                    <li>Scapegoat (3:23)</li>
-                    <li>Get Busy (3:23)</li>
-                    <li>Suzie (2:56)</li>
-                    <li>Tribute (9:12)</li>
-                    <li>Move A Little Closer (2:50)</li>
-                </ol>
-            </section>
-
+            
             <figure>
-                <audio class="main" src="audio/01 Rain.mp3" controls>here should be an audio
+                <audio class="audio" src="audio/01 Rain.mp3" controls>here should be an audio
                 </audio>
             </figure>
-
+            
         </div>
+        <!-- 📢  -->
+        <section class="playlist">
+            <ol>
+                <li>Open Your Eyes<span class="song-duration">(3:09)</span> </li>
+                <li>Maria<span class="song-duration">(3:46)</span></li>
+                <li><em>Rain</em> &nbsp;&nbsp;<i id="volume-ico" class="fas fa-volume-up"></i> <span class="song-duration">(4:37)</span> </li>
+                <li>Lords Of The Boards<span class="song-duration">(3:44)</span></li>
+                <li>Crossing The Deadline<span class="song-duration">(3:26)</span></li>
+                <li>We Use The Pain<span class="song-duration">(2:32)</span></li>
+                <li>Never Born<span class="song-duration">(5:18)</span></li>
+                <li>Wash It Down<span class="song-duration">(3:06)</span></li>
+                <li>Scapegoat<span class="song-duration">(3:23)</span></li>
+                <li>Get Busy<span class="song-duration">(3:23)</span></li>
+                <li>Suzie<span class="song-duration">(2:56)</span></li>
+                <li>Tribute<span class="song-duration">(9:12)</span></li>
+                <li>Move A Little Closer<span class="song-duration">(2:50)</span></li>
+            </ol>
+        </section>
+        
+        <footer>
+            <br><br>
+            <a href="ContactUs.html" >Contact Us</a>
+        </footer>
+
     </main>
-
-    <footer>
-        <br><br>
-        <a href="ContactUs.html" style="margin-left:15%;" >Contact Us</a>
-    </footer>
-
+        
 </body>
 </html>
