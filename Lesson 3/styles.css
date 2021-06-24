@@ -39,7 +39,7 @@ main {
     width: 40%;
     min-width: 150px;
     max-width: 400px;
-    margin: 0 2rem;
+    margin: 0 2rem 0 2.2rem;
 }
 
 #cover {
@@ -68,8 +68,12 @@ footer {
 }
 
 header {
+    border-radius: 0.4rem;
+    border: #162723 2.5px solid;
     text-align: center;
     padding: 1rem 0 1rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.9em;
 }
 
 .albums :is(ul, li) {
@@ -98,7 +102,9 @@ header {
     float: right;
 }
 
-.audio {
-    display: block;
-    margin: 3% auto;
+.player-controls {
+    border: none;
+    background-color: rgba(255,255,255,0);
+    cursor: pointer;
+    margin: 0 0.2rem;
 }

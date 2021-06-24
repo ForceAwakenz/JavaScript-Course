@@ -42,11 +42,8 @@
             <div class="cover" class="main-content" >
                 <img id="cover" src="pics/ProudLikeAGod.jpg" alt="proud like a God">
             </div>
-            
-            <figure>
-                <audio class="audio" src="audio/01 Rain.mp3" controls>here should be an audio
-                </audio>
-            </figure>
+                
+
             
         </div>
         <!-- 📢  -->
@@ -54,7 +51,18 @@
             <ol>
                 <li>Open Your Eyes<span class="song-duration">(3:09)</span> </li>
                 <li>Maria<span class="song-duration">(3:46)</span></li>
-                <li><em>Rain</em> &nbsp;&nbsp;<i id="volume-ico" class="fas fa-volume-up"></i> <span class="song-duration">(4:37)</span> </li>
+                <li><em>Rain</em> &nbsp;
+                    
+                    <button class="player-controls" onclick="document.getElementById('player').play()"><i class="fas fa-play"></i></button> 
+                    <button class="player-controls" onclick="document.getElementById('player').pause()"><i class="fas fa-pause"></i></button> 
+                    <button class="player-controls" onclick="document.getElementById('player').volume += 0.1">
+                    <i class="fas fa-volume-up"></i>
+                    </button> 
+                    <button class="player-controls" onclick="document.getElementById('player').volume -= 0.1">
+                    <i class="fas fa-volume-down"></i>
+                    </button>
+
+                    <span class="song-duration">(4:37)</span> </li>
                 <li>Lords Of The Boards<span class="song-duration">(3:44)</span></li>
                 <li>Crossing The Deadline<span class="song-duration">(3:26)</span></li>
                 <li>We Use The Pain<span class="song-duration">(2:32)</span></li>
@@ -75,5 +83,8 @@
 
     </main>
         
+    <audio id="player" src="audio/01 Rain.mp3">here should be an audio
+    </audio>
+
 </body>
 </html>
