@@ -109,7 +109,7 @@ header {
     content: counter(playlist-counter) ' ';
 }
 
-.song-duration {
+.duration {
     float: right;
 }
 
