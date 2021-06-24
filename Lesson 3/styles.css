@@ -21,6 +21,9 @@
 
 body, html {
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg, #32e0c4,#222831);
+    min-height: 100vh;
+    overflow: hidden;
 }
 
 main {
@@ -39,11 +42,12 @@ main {
     width: 40%;
     min-width: 150px;
     max-width: 400px;
-    margin: 0 2rem 0 2.2rem;
+    margin: 0 1.6rem 0 2rem;
 }
 
 #cover {
     width: 100%;
+    border-radius: 0.4rem;
 }
 
 .playlist {
@@ -56,10 +60,11 @@ footer {
     clear: both;
     margin: 0 auto;
     text-align: center;
+    font-size: 0.8rem;
 }
 
 /* ---------------- Main Styling ---------------- */
-:is(.playlist, .albums) li {
+:is(.playlist, .albums-list) li {
     border-radius: 0.4rem;
     border: #162723 2.5px solid;
     width: 100%;
@@ -67,20 +72,26 @@ footer {
     padding: 0.4rem;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+
 header {
     border-radius: 0.4rem;
     border: #162723 2.5px solid;
     text-align: center;
-    padding: 1rem 0 1rem;
-    margin-bottom: 0.5rem;
+    padding: 0.8rem 0 0.8rem;
+    margin: 0.29rem 0 0.5rem;
     font-size: 0.9em;
 }
 
-.albums :is(ul, li) {
+.albums-list :is(ul, li) {
     text-align: center;
 }
 
-.albums li{
+.albums-list li{
     padding: 5% 5%;
     margin-bottom: 1rem;
     list-style-type: none;
